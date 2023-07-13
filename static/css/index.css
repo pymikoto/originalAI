@@ -1,0 +1,538 @@
+.header{
+    background-color: rgb(105, 240, 238, 0.9);
+    width: 100%;
+    height: 12%;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    /* right: 0; */
+    z-index: 999;
+    border: 1px solid #95f4f1;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+}
+footer.footer {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    color: #fff;
+    text-align: center; /* テキスト入れる時用  */
+    padding: 30px 0;
+    position: absolute;
+  }
+/* １，２ページの背景色 */
+.full-page {
+    background:linear-gradient(270deg,  
+    #5206ea 0%,
+    #7a6dd1 20%,
+    #7c9dc0 27%,
+    rgb(255, 255, 255) 50%,
+    #d1a286 67%,
+    #a0462a 80%,
+    #750202 100%); 
+	position: relative;
+    width: 100%;
+    min-height: 1000px;
+	border: 1px solid #f5f3f3;
+   }
+/* 文字のフォント （全体を指定）*/
+body {
+    font-family: serif;
+    }
+/* 中央に文字を配置 */
+.content{
+    position:absolute;
+    top: 550px;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:100%;
+  }
+.content2{
+    position:absolute;
+    top: 350px;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:100%;
+}
+/* 文字の大きさを調整（もっと大きくしたい） */
+/* Sciorhuma */
+.title{
+    font-size: 80px;
+}
+/* AIによる文理判定 */
+.subtitle{
+    font-size: 50px;
+}
+/* 診断開始 */
+.click_btn{
+    font-size: 50px;
+}
+
+
+/* background: linear-gradient(角度や方向, 開始色, 終了色); */
+/* result.htmlの背景色（答えによって変化） */
+
+
+.science{
+    background:radial-gradient(#fff, #561ccb 40%); 
+	position: relative;
+    width: 100%;
+    min-height: 700px;
+	border: 1px solid #f5f3f3;
+} 
+/* .humanity {
+    animation-name: changeBackgroundColor2;
+    animation-duration: 0.8s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards; アニメーション終了時のスタイルを維持 
+    position: relative;
+    width: 100%;
+    min-height: 700px;
+	border: 1px solid #f5f3f3;
+  }  */
+/* 固定背景 */
+.humanity{
+    background:radial-gradient(#fff, #750202 40%); 
+	position: relative;
+    width: 100%;
+    min-height: 700px;
+	border: 1px solid #f5f3f3;
+}
+.non{
+    background:radial-gradient(#7b5151, #7c185c 40%); 
+	position: relative;
+    width: 100%;
+    min-height: 700px;
+	border: 1px solid #f5f3f3;
+}
+
+
+
+
+/* 入力欄をデザイン */
+.cp_iptxt {
+	position: relative;
+	width: 80%;
+	margin: 40px 3%;
+}
+.cp_iptxt input[type='text'] {
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.3em;
+	transition: 0.3s;
+	letter-spacing: 1px;
+	color: #000000;
+	border: none;
+	border-bottom: 2px solid #000000;
+	/* background: transparent; */
+}
+.ef input[type='text']:focus {
+	border-bottom: 2px solid #ffffff;
+	outline: none;
+}
+
+/* アプリの説明文 */
+.text{
+    color: #fff;
+    margin: 150px 3%;
+    background: #000000;
+}
+span{
+    display: block;
+  }
+
+/* 結果画面のアニメーション */
+.fadeIn {
+    animation-name: fadeInAnime;
+    animation-fill-mode:backwards;
+    animation-duration:5s;
+    /* animation-iteration-count:infinite; */
+    animation-timing-function:ease;
+    animation-delay: 0.5s;
+    animation-direction:normal;
+}
+    
+    /*1で解説*/
+    @keyframes fadeInAnime{
+      0% {
+        opacity: 0;
+      }
+    
+      100% {
+        opacity: 1;
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* 何か背景でアニメーションしたかった */
+/* @keyframes changeBackgroundColor1 {
+    0% {
+        background:#000000; 
+    }
+    20%{
+        background:#121b46; 
+    }
+    40%{
+        background:#1b265a; 
+    }
+    50% {
+        background:radial-gradient(#fff, #1b265a 10%); 
+    }
+    60%{
+        background:radial-gradient(#fff, #243175 20%); 
+    }
+    80%{
+        background:radial-gradient(#fff, #3549ab 30%); 
+    }
+    100% {
+        background:radial-gradient(#fff, #4764f4 40%); 
+    }
+  } */
+
+/* @keyframes changeBackgroundColor2 {
+    0% {
+      background: #000000;
+    }
+    1% {
+      background: #020101;
+    }
+    2% {
+      background: #040202;
+    }
+    3% {
+      background: #060303;
+    }
+    4% {
+      background: #080404;
+    }
+    5% {
+      background: #0a0505;
+    }
+    6% {
+      background: #0c0606;
+    }
+    7% {
+      background: #0e0707;
+    }
+    8% {
+      background: #100808;
+    }
+    9% {
+      background: #120909;
+    }
+    10% {
+      background: #14100a;
+    }
+    11% {
+      background: #16120b;
+    }
+    12% {
+      background: #18140c;
+    }
+    13% {
+      background: #1a160d;
+    }
+    14% {
+      background: #1c180e;
+    }
+    15% {
+      background: #1e1a0f;
+    }
+    16% {
+      background: #201c10;
+    }
+    17% {
+      background: #221e11;
+    }
+    18% {
+      background: #242012;
+    }
+    19% {
+      background: #262213;
+    }
+    20% {
+      background: radial-gradient(#fff, #2b0606 10%);
+    }
+    21% {
+      background: radial-gradient(#fff, #2d0808 11%);
+    }
+    22% {
+      background: radial-gradient(#fff, #2f0a0a 12%);
+    }
+    23% {
+      background: radial-gradient(#fff, #310c0c 13%);
+    }
+    24% {
+      background: radial-gradient(#fff, #330e0e 14%);
+    }
+    25% {
+      background: radial-gradient(#fff, #351010 15%);
+    }
+    26% {
+      background: radial-gradient(#fff, #371212 16%);
+    }
+    27% {
+      background: radial-gradient(#fff, #391414 17%);
+    }
+    28% {
+      background: radial-gradient(#fff, #3b1616 18%);
+    }
+    29% {
+      background: radial-gradient(#fff, #3d1818 19%);
+    }
+    30% {
+      background: radial-gradient(#fff, #3f1a1a 20%);
+    }
+    31% {
+      background: radial-gradient(#fff, #411c1c 21%);
+    }
+    32% {
+      background: radial-gradient(#fff, #431e1e 22%);
+    }
+    33% {
+      background: radial-gradient(#fff, #452020 23%);
+    }
+    34% {
+      background: radial-gradient(#fff, #472222 24%);
+    }
+    35% {
+      background: radial-gradient(#fff, #492424 25%);
+    }
+    36% {
+      background: radial-gradient(#fff, #4b2626 26%);
+    }
+    37% {
+      background: radial-gradient(#fff, #4d2828 27%);
+    }
+    38% {
+      background: radial-gradient(#fff, #4f2a2a 28%);
+    }
+    39% {
+      background: radial-gradient(#fff, #512c2c 29%);
+    }
+    40% {
+      background: radial-gradient(#fff, #532e2e 30%);
+    }
+    41% {
+      background: radial-gradient(#fff, #553030 31%);
+    }
+    42% {
+      background: radial-gradient(#fff, #573232 32%);
+    }
+    43% {
+      background: radial-gradient(#fff, #593434 33%);
+    }
+    44% {
+      background: radial-gradient(#fff, #5b3636 34%);
+    }
+    45% {
+      background: radial-gradient(#fff, #5d3838 35%);
+    }
+    46% {
+      background: radial-gradient(#fff, #5f3a3a 36%);
+    }
+    47% {
+      background: radial-gradient(#fff, #613c3c 37%);
+    }
+    48% {
+      background: radial-gradient(#fff, #633e3e 38%);
+    }
+    49% {
+      background: radial-gradient(#fff, #654040 39%);
+    }
+    50% {
+      background: radial-gradient(#fff, #750202 40%);
+    }
+    51% {
+      background: radial-gradient(#fff, #770303 41%);
+    }
+    52% {
+      background: radial-gradient(#fff, #790404 42%);
+    }
+    53% {
+      background: radial-gradient(#fff, #7b0505 43%);
+    }
+    54% {
+      background: radial-gradient(#fff, #7d0606 44%);
+    }
+    55% {
+      background: radial-gradient(#fff, #7f0707 45%);
+    }
+    56% {
+      background: radial-gradient(#fff, #810808 46%);
+    }
+    57% {
+      background: radial-gradient(#fff, #830909 47%);
+    }
+    58% {
+      background: radial-gradient(#fff, #850a0a 48%);
+    }
+    59% {
+      background: radial-gradient(#fff, #870b0b 49%);
+    }
+    60% {
+      background: radial-gradient(#fff, #890c0c 50%);
+    }
+    61% {
+      background: radial-gradient(#fff, #8b0d0d 51%);
+    }
+    62% {
+      background: radial-gradient(#fff, #8d0e0e 52%);
+    }
+    63% {
+      background: radial-gradient(#fff, #8f0f0f 53%);
+    }
+    64% {
+      background: radial-gradient(#fff, #911010 54%);
+    }
+    65% {
+      background: radial-gradient(#fff, #931111 55%);
+    }
+    66% {
+      background: radial-gradient(#fff, #951212 56%);
+    }
+    67% {
+      background: radial-gradient(#fff, #971313 57%);
+    }
+    68% {
+      background: radial-gradient(#fff, #991414 58%);
+    }
+    69% {
+      background: radial-gradient(#fff, #9b1515 59%);
+    }
+    70% {
+      background: radial-gradient(#fff, #9d1616 60%);
+    }
+    71% {
+      background: radial-gradient(#fff, #9f1717 61%);
+    }
+    72% {
+      background: radial-gradient(#fff, #a11818 62%);
+    }
+    73% {
+      background: radial-gradient(#fff, #a31919 63%);
+    }
+    74% {
+      background: radial-gradient(#fff, #a51a1a 64%);
+    }
+    75% {
+      background: radial-gradient(#fff, #a71b1b 65%);
+    }
+    76% {
+      background: radial-gradient(#fff, #a91c1c 66%);
+    }
+    77% {
+      background: radial-gradient(#fff, #ab1d1d 67%);
+    }
+    78% {
+      background: radial-gradient(#fff, #ad1e1e 68%);
+    }
+    79% {
+      background: radial-gradient(#fff, #af1f1f 69%);
+    }
+    80% {
+      background: radial-gradient(#fff, #b12020 70%);
+    }
+    81% {
+      background: radial-gradient(#fff, #b32121 71%);
+    }
+    82% {
+      background: radial-gradient(#fff, #b52222 72%);
+    }
+    83% {
+      background: radial-gradient(#fff, #b72323 73%);
+    }
+    84% {
+      background: radial-gradient(#fff, #b92424 74%);
+    }
+    85% {
+      background: radial-gradient(#fff, #bb2525 75%);
+    }
+    86% {
+      background: radial-gradient(#fff, #bd2626 76%);
+    }
+    87% {
+      background: radial-gradient(#fff, #bf2727 77%);
+    }
+    88% {
+      background: radial-gradient(#fff, #c12828 78%);
+    }
+    89% {
+      background: radial-gradient(#fff, #c32929 79%);
+    }
+    90% {
+      background: radial-gradient(#fff, #c52a2a 80%);
+    }
+    91% {
+      background: radial-gradient(#fff, #c72b2b 81%);
+    }
+    92% {
+      background: radial-gradient(#fff, #c92c2c 82%);
+    }
+    93% {
+      background: radial-gradient(#fff, #cb2d2d 83%);
+    }
+    94% {
+      background: radial-gradient(#fff, #cd2e2e 84%);
+    }
+    95% {
+      background: radial-gradient(#fff, #cf2f2f 85%);
+    }
+    96% {
+      background: radial-gradient(#fff, #d13030 86%);
+    }
+    97% {
+      background: radial-gradient(#fff, #d33131 87%);
+    }
+    98% {
+      background: radial-gradient(#fff, #d53232 88%);
+    }
+    99% {
+      background: radial-gradient(#fff, #d73333 89%);
+    }
+    100% {
+      background: radial-gradient(#fff, #920202 90%);
+    }
+  } */
+/* @keyframes changeBackgroundColor2 {
+    0% {
+        background:#000000; 
+    }
+    20%{
+        background:#1f0303; 
+    }
+    40%{
+        background:#2b0606; 
+    }
+    50% {
+        background:radial-gradient(#fff, #2b0606 10%); 
+    }
+    60%{
+        background:radial-gradient(#fff, #4a0808 20%); 
+    }
+    80%{
+        background:radial-gradient(#fff, #650707 30%); 
+    }
+    100% {
+        background:radial-gradient(#fff, #750202 40%); 
+    }
+  } */
+/* .science {
+    animation-name: changeBackgroundColor1;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards; /* アニメーション終了時のスタイルを維持 
+    position: relative;
+    width: 100%;
+    min-height: 700px;
+	border: 1px solid #f5f3f3;
+  }  */

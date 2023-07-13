@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>文理診断</title>
+    <link rel="stylesheet"  href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+
+<div >
+    {% if result=="理系" %}
+        <center class="science">
+            <div class="content">
+            <div class="title">
+                {{percent}}{{result}}
+            </div>
+    
+            <a href="/judg">他の文章へ</a>
+            </div>
+        </center>
+    {% elif result=="文系" %} 
+        <center class="humanity">
+            <div class="content">
+            <div class="title">
+                {{percent}}{{result}}
+            </div>>
+
+            <a href="/judg">他の文章へ</a>
+            </div>
+        </center>
+    {% elif result=="キメラ" %} 
+        <center class="non">
+            <div class="content">
+            <div class="title">
+                {{percent}}{{result}}
+            </div>>
+
+            <a href="/judg">他の文章へ</a>
+            </div>
+        </center>
+    {% else %}
+        
+    {% endif %}
+</div>
+<header class="header">
+    <div class="header__inner">
+        <h1 class="header__title">
+          <a href="/">
+            Topページへ
+          </a>
+        </h1>
+      </div>
+</header>

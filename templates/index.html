@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>文理診断</title>
+    <link rel="stylesheet"  href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+    <div class="full-page">
+        <center>
+            <div class="content">
+            <div class="title">Sciorhuma</div>
+            <div class="subtitle">～AIによる文理判定～</div>
+                <div class="click_btn">
+                <a href="/judg">診断開始</a>
+                </div>
+                <div>
+                    ↓AIの判定方法に関する説明は下へ
+                </div>
+                <div class="text">
+                入力した文章が「理系」によって書かれたものか、
+                「文系」によって書かれたものかAIが判定します。<span></span>　<span></span>
+
+                自分や友達が書いた文章や、本の中の文章など、
+                色々な文章でお試しください！<span></span>　<span></span>　<span></span>　<span></span>
+
+                このアプリでは、ベイズの定理を基にしたナイーブベイズ計算を用いてAIに「文系」と「理系」の文章を学習させ、
+                <span></span>その学習結果に基づいて、入力された文章が「理系」「文系」のどちらによって書かれたものか判定します。
+                </div>
+            </div>
+        </center>
+    </div>
+    <header class="header">
+        <div class="header__inner">
+            <h1 class="header__title">
+              <a href="/">
+                Topページへ
+              </a>
+            </h1>
+          </div>
+    </header>
+</body>
+<footer class="footer"></footer>
+</html> 
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>文理診断</title>
+    <link rel="stylesheet"  href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+    <div class="full-page">
+        <div class="content2">
+        <center>
+        <div class="title">文系理系診断</div>
+        <form action="/judg" method="POST">
+            <p>
+                <label class="subtitle">文章を入力してください！
+                </label>
+                <!-- <input type="text" name="input_text" placeholder="文章"> -->
+                <div class="cp_iptxt">
+                    <label class="ef">
+                    <input type="text" name="input_text" placeholder="">
+                    </label>
+                </div>
+            </p>
+            <div class="subtitle">
+                <input type="submit" value='診断する！'>
+            </div>
+        </form>
+        </center>
+        </div>
+    </div>
+    <header class="header">
+        <div class="header__inner">
+            <h1 class="header__title">
+              <a href="/">
+                Topページへ
+              </a>
+            </h1>
+          </div>
+    </header>
+</body>
+<footer class="footer"></footer>
